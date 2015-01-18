@@ -16,17 +16,20 @@
         "php": "~5.4",
         "doctrine/orm": "~2.3",
         "symfony-cmf/seo-bundle": "~1.1",
-        "symfony/symfony": "~2.3"
+        "symfony/symfony": "~2.3, <2.7.x-dev",
+        "sonata-project/seo-bundle": "^1.1.4"
     },
 
     "require-dev": {
-        "axstrad/content": "0.1.*",
-        "axstrad/test": "0.1.*",
-        "axstrad/test-bundle": "0.1.*",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "axstrad/content": "~0.1.0",
+        "axstrad/test": "~0.1.0",
+        "axstrad/test-bundle": "~0.1.0",
+        "doctrine/data-fixtures": ">v1.0.0-ALPHA1, ~1.0.0",
+        "doctrine/doctrine-fixtures-bundle": "~2.2.0",
         "phpunit/phpunit": "~4.1",
         "satooshi/php-coveralls": "dev-master",
-        "sensio/framework-extra-bundle": "~2.3 | ~3"
+        "sensio/framework-extra-bundle": "~2.3 || ~3.0",
+        "twig/twig": "~1.12"
     },
 
     "autoload": {
@@ -36,7 +39,6 @@
     },
 
     "minimum-stability": "dev",
-    "prefer-stable": true,
 
     "extra": {
         "branch-alias": {
