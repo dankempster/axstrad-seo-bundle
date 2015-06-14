@@ -4,7 +4,7 @@ php:
   - hhvm
 env:
   - SYMFONY_VERSION="2.3.*"
-  - SYMFONY_VERSION="2.6.*"
+  - SYMFONY_VERSION="2.7.*"
   - LOWEST=1
 before_script:
   - composer self-update
@@ -18,12 +18,10 @@ after_script:
   - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
   - php ./vendor/bin/coveralls -v
 matrix:
-  # Build with PHP 5.5 and Symfony LTS
+  # Build with PHP 5.6 and Symfony Next
   include:
-    - php: 5.5
-      env: SYMFONY_VERSION="2.3.*"
     - php: 5.6
-      env: SYMFONY_VERSION="2.7.*@dev"
+      env: SYMFONY_VERSION="dev-master@dev"
 
   exclude:
     - php: hhvm
@@ -31,7 +29,7 @@ matrix:
 
   # Test the latest PHP and Symfony Next
   allow_failures:
-    - env: SYMFONY_VERSION="2.7.*@dev"
+    - env: SYMFONY_VERSION="dev-master@dev"
     - php: hhvm
 
   fast_finish: true
