@@ -12,7 +12,7 @@
 
 namespace Axstrad\Bundle\SeoBundle\Configuration;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\ConfigurationAnnotation;
+use Axstrad\Bundle\ExtraFrameworkBundle\Configuration\ConfigurationAnnotation;
 
 
 /**

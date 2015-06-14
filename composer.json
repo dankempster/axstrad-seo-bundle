@@ -14,6 +14,7 @@
 
     "require": {
         "php": "~5.4",
+        "axstrad/extra-framework-bundle": "dev-develop@dev",
         "doctrine/orm": "~2.3",
         "symfony-cmf/seo-bundle": "~1.1",
         "symfony/symfony": "~2.3"
