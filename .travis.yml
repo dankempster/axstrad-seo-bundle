@@ -4,7 +4,7 @@ php:
   - hhvm
 env:
   - SYMFONY_VERSION="2.3.*"
-  - SYMFONY_VERSION="2.6.*"
+  - SYMFONY_VERSION="2.7.*"
   # - SYMFONY_VERSION="3.0.*@dev"
 before_script:
   # - export COMPOSER_PATH=$(which composer)
